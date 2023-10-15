@@ -99,7 +99,9 @@ class _HomeScreenState extends State<HomeScreen> {
                   decoration: const InputDecoration(
                     hintText: 'Add Title',
                     enabledBorder: OutlineInputBorder(),
-                    focusedBorder: OutlineInputBorder(),
+                    focusedBorder: OutlineInputBorder(
+                      borderSide: BorderSide(width: 3, color: Colors.blue),
+                    ),
                   ),
                   validator: (String? value) {
                     if (value?.isEmpty ?? true) {
@@ -114,7 +116,9 @@ class _HomeScreenState extends State<HomeScreen> {
                   decoration: const InputDecoration(
                     hintText: 'Add Description',
                     enabledBorder: OutlineInputBorder(),
-                    focusedBorder: OutlineInputBorder(),
+                    focusedBorder: OutlineInputBorder(
+                      borderSide: BorderSide(width: 3, color: Colors.blue),
+                    ),
                   ),
                   validator: (String? value) {
                     if (value?.isEmpty ?? true) {

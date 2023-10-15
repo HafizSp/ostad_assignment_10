@@ -31,7 +31,9 @@ class _UpdateTodoState extends State<UpdateTodo> {
               decoration: const InputDecoration(
                 hintText: 'Edit Title',
                 enabledBorder: OutlineInputBorder(),
-                focusedBorder: OutlineInputBorder(),
+                focusedBorder: OutlineInputBorder(
+                  borderSide: BorderSide(width: 3, color: Colors.blue),
+                ),
               ),
               validator: (String? value) {
                 if (value?.isEmpty ?? true) {
@@ -46,7 +48,9 @@ class _UpdateTodoState extends State<UpdateTodo> {
               decoration: const InputDecoration(
                 hintText: 'Edit Description',
                 enabledBorder: OutlineInputBorder(),
-                focusedBorder: OutlineInputBorder(),
+                focusedBorder: OutlineInputBorder(
+                  borderSide: BorderSide(width: 3, color: Colors.blue),
+                ),
               ),
               validator: (String? value) {
                 if (value?.isEmpty ?? true) {
